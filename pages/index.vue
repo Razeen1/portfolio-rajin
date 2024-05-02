@@ -24,8 +24,14 @@
 
     </div>
 <!--    <v-img src="/banner4.jpg" height="450" cover>-->
-    <v-card flat height="450" color="transparent" class="aboutMe">
+    <v-card class="aboutMe" color="transparent" flat height="650">
       <v-card-text>
+        <div class="abtImage1">
+          <v-img src="/img1.jpg"></v-img>
+        </div>
+        <div class="abtImage2">
+          <v-img src="/img2.jpg"></v-img>
+        </div>
         <div class="text-h2"
              style="writing-mode: vertical-lr;text-orientation: revert;color:#B98389;position: absolute;right:12%;top:17%">
           About Me
@@ -39,6 +45,25 @@
             ipsum. Morbi quis dolor nec leo blandit posuere. In blandit convallis dui, quis posuere justo ultricies
             sed. </p>
         </div>
+      </v-card-text>
+    </v-card>
+    <v-card class="mx-6 pa-6" flat>
+      <v-card-text>
+        <span class="text-h2 font-weight-bold projectText pb-2">Projects</span>
+        <v-row>
+          <v-col cols="3">
+            <v-card flat height="300px" image="/img1.jpg" rounded="0" subtitle="HEllow this is world"
+                    title="Hello World"></v-card>
+          </v-col><v-col cols="3">
+            <v-card flat height="300px" image="/img1.jpg" rounded="0" subtitle="HEllow this is world"
+                    title="Hello World"></v-card>
+          </v-col><v-col cols="3">
+            <v-card flat height="300px" image="/img1.jpg" rounded="0" subtitle="HEllow this is world"
+                    title="Hello World"></v-card>
+          </v-col>
+
+        </v-row>
+
       </v-card-text>
     </v-card>
   </v-container>
@@ -206,7 +231,25 @@ onMounted(() => {
   top: 0;
 }
 
-.aboutMe{
-  background: url('/banner4.jpg');
+.abtImage1 {
+  width: 250px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
 }
+
+.abtImage2 {
+  position: absolute;
+  width: 250px;
+  top: 30%;
+  left: 5%;
+
+}
+
+.projectSection {
+  background: rgba(185, 131, 137) !important;
+  background: linear-gradient(180deg, rgba(71, 147, 175, 0) 0%, rgba(185, 131, 137, 0.8) 100%) !important;
+}
+
+
 </style>
